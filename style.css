@@ -1,0 +1,377 @@
+/* 
+CSS Selectors
+
+a,b - Multiple Element Selector
+a b - Descendant Selector
+a > b - Child Selector
+a + b - Adjacent Sibling Selector
+[a=b] - Attribute Selector
+a:b - Pseudoclass Selector
+a::b - Pseudoelement Selector
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #333333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    background-color: lightgray;
+    color: black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.lNav {
+    font-family: 'Poppins';
+    font-size: x-large;
+    font-weight: 900;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: gray;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+main hr {
+    border: 0;
+    background: lightgrey;
+    height: 1.2px;
+    margin: 20px 75px;
+    width: 90%;
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 113px 0;
+    /* flex-wrap: wrap; */
+}
+
+.home>div {
+    width: 30%;
+}
+
+.lHome {
+    font-size: 2.5rem;
+}
+
+.lHome .button {
+    padding: 50px 0;
+}
+
+.lHome .resume {
+    font-family: 'Montserrat';
+    padding: 12px;
+    background: black;
+    color: white;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.lHome .resume a {
+    color: white;
+    text-decoration: none;
+}
+
+.lHome .resume a:hover {
+    font-size: 17px;
+}
+
+.lHome .project {
+    font-family: 'Montserrat';
+    padding: 12px;
+    background: black;
+    color: white;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.lHome .project a {
+    color: white;
+    text-decoration: none;
+}
+
+.lHome .project a:hover {
+    font-size: 17px;
+}
+
+#element {
+    /* color: #989C94; */
+    color: #A6A6A8;
+    font-weight: 900;
+}
+
+.rHome img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 400px;
+    max-width: 400px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.projects {
+    max-width: 1300px;
+    margin: auto;
+    height: 88vh;
+    width: 100%;
+}
+
+.projects h1 {
+    font-size: 1.8rem;
+    margin-left: 30px;
+}
+
+.projects .boxes {
+    display: flex;
+}
+
+.projects .pBox1 {
+    margin: 25px;
+    height: 500px;
+    width: 400px;
+    border-radius: 8%;
+    background-color: #87898c82;
+}
+
+.p1-title {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 30px;
+    margin: 20px 25px;
+    color: black;
+    font-weight: 900;
+}
+
+.p1-desc {
+    margin: 35px 20px;
+}
+
+.view-more {
+    position: relative;
+    top: 95px;
+    left: 250px;
+    color: white;
+    font-size: large;
+    font-weight: 900;
+}
+
+.view-more a {
+    color: white;
+}
+
+.view-more a:hover {
+    color: black;
+}
+
+footer {
+    background-color: #302f2f;
+    color: white;
+    font-weight: 900;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+    font-weight: 900;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 200px;
+}
+
+footer .text-rights {
+    text-align: center;
+    color: lightgray;
+    padding: 7px 0;
+    font-size: 14px;
+}
+
+footer .text-rights a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+/* Responsive */
+/* For I-Pad */
+@media screen and (max-width: 1745px) {
+    main hr{
+        border: 0;
+        background: lightgrey;
+        height: 1.2px;
+        margin: 26px 62px;
+        width: 100%;
+    }
+
+    .projects h1 {
+        font-size: 1.8rem;
+        margin-left: 45px;
+    }
+
+    .projects {
+        max-width: 1300px;
+        margin: 10px 70px;
+        height: 88vh;
+        width: 100%;
+    }
+
+    footer 
+    {
+        background-color: #302f2f;
+        color: white;
+        font-weight: 900;
+        width: 130%
+    }
+
+    .footer
+    {
+        margin: 0px -85px;
+        width: 100%;
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+        font-weight: 900;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .home{
+        flex-direction: column-reverse;
+    }
+
+    .home>div {
+        width: 45%;
+    }
+
+    .rHome
+    {
+        width: 720px;
+    }
+
+    .lHome
+    {
+        margin-left: 25px;
+        margin-top: 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .home {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 113px 0;
+        flex-wrap: wrap;
+    }
+
+    main hr{
+        border: 0;
+        background: lightgrey;
+        height: 1.2px;
+        margin: 26px 62px;
+        width: 100%;
+    }
+
+    .projects h1 {
+        font-size: 1.8rem;
+        margin-left: 45px;
+    }
+
+    .projects {
+        max-width: 1300px;
+        margin: 10px 70px;
+        height: 88vh;
+        width: 100%;
+    }s
+
+    .project .boxes 
+    {
+        flex-wrap: wrap;
+    }
+
+    footer 
+    {
+        background-color: #302f2f;
+        color: white;
+        font-weight: 900;
+        width: 130%
+    }
+
+    .footer
+    {
+        margin: 0px -85px;
+        width: 100%;
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+        font-weight: 900;
+    }
+}
+
+/* For Mobile */
+@media screen and (max-width: 600px) {
+    .lHome {
+        margin-left: 170px;
+        margin-top: 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

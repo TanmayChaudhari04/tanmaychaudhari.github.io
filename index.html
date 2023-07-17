@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content = "width = device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tanmay Chaudhari</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="lNav">Tanmay</div>
+            <div class="rNav">
+                <ul>
+                    <li><a href="#h">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="h">
+            <div class="lHome">Hello, My name is
+                <div><span id="element"></span></div>
+                <div class="button">
+                    <button class="resume"><a href="images/TanmayChaudhari's_Resume.docx.pdf"
+                            target="_blank">Résumé</a></button>
+                    <button class="project"><a href="#l">Projects</a></button>
+                </div>
+            </div>
+            <div class="rHome"><img src="/images/sample.jpg" alt="Tanmay's Image"></div>
+        </section>
+        <hr id = "l">
+        <section class = "projects" id = "p">
+            <h1>Projects</h1>
+            <div class="boxes">
+                <div class="pBox1">
+                    <div class="p1-title">Project 1</div>
+                    <div class="p1-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Accusantium cum molestiae maxime consequatur suscipit cumque 
+                        pariatur doloribus eum, numquam nisi ipsa et assumenda beatae 
+                        ipsum dignissimos exercitationem. Tempore, reiciendis nesciunt?
+                    </div>
+                    <div class="view-more"><a href = "#" target = "_blank">View More</a></div>
+                </div>
+                <div class="pBox1">
+                    <div class="p1-title">Project 2</div>
+                    <div class="p1-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Accusantium cum molestiae maxime consequatur suscipit cumque 
+                        pariatur doloribus eum, numquam nisi ipsa et assumenda beatae 
+                        ipsum dignissimos exercitationem. Tempore, reiciendis nesciunt?
+                    </div>
+                    <div class="view-more"><a href = "#" target = "_blank">View More</a></div>
+                </div>
+                <div class="pBox1">
+                    <div class="p1-title">Project 3</div>
+                    <div class="p1-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Accusantium cum molestiae maxime consequatur suscipit cumque 
+                        pariatur doloribus eum, numquam nisi ipsa et assumenda beatae 
+                        ipsum dignissimos exercitationem. Tempore, reiciendis nesciunt?
+                    </div>
+                    <div class="view-more"><a href = "#" target = "_blank">View More</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="firstFooter">
+                <h3>Tanmay's Portfolio</h3>
+            </div>
+            <div class="secondFooter">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="thirdFooter"></div>
+            <div class="fourthFooter"></div>
+        </div>
+        <div class="text-rights">
+            Copyright&#169; <a href="main.html">tanmaychaudhari.com</a> | All rights reserved
+        </div>
+    </footer>
+
+    <!-- Typed Animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element',
+            {
+                strings: ['Tanmay Chaudhari', 'तन्मय चौधरी', 'તન્મય ચૌધરી', 'Tanmay Chaudhari'],
+                typeSpeed: 50,
+            });
+    </script>
+</body>
+
+</html>
