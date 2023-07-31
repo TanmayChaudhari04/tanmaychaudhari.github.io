@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    background-color: lightgray;
+    color: black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.c {
+    display: flex;
+}
+
+.c .h {
+    margin: 10px 15px;
+}
+
+.c .a {
+    margin: 10px 15px;
+}
+
+.c .cm {
+    margin: 10px 15px;
+}
+
+.c a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+.c a:hover {
+    text-decoration: none;
+    color: gray;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+/* About */
+.abody
+{
+    background-color: #333333;
+}
+
+.about h1
+{
+    font-family: 'Poppins';
+    font-size: x-large;
+    color: #A6A6A8;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 100px;
+    font-weight: 900;
+}
+
+.about p
+{
+    color: white;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 25px;
+    margin-right: 100px;
+}
+/* About End */
+
+.lNav {
+    /* font-family: 'Ubuntu'; */
+    font-family: 'Poppins';
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.card {
+    width: 90%;
+    max-width: 300px;
+    background: rgb(67, 65, 65);
+    color: #fff;
+    margin-left: 15px;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.plan
+{
+    font-family: 'Poppins';
+    font-size: 20px;
+    width: 90%;
+    max-width: 100px;
+    background: rgb(67, 65, 65);
+    color: #fff;
+    margin-left: 390px;
+    margin-top: -120px;
+    border-radius: 20px;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.plan a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.plan a:hover
+{
+    text-decoration: none;
+    color: lightgray;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #fdfdfd;
+    color: black;
+    padding: 5px 22px;
+    height: 53px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #fdfdfd;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 13px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    margin-top: -6px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 15px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        width: 90%;
+        max-width: 300px;
+        background: rgb(67, 65, 65);
+        color: #fff;
+        margin-left: 80px;
+        margin-top: 100px;
+        border-radius: 20px;
+        padding: 30px 30px;
+        text-align: center;
+    }
+
+    .plan
+    {
+        font-family: 'Poppins';
+        font-size: 20px;
+        width: 90%;
+        max-width: 100px;
+        background: rgb(67, 65, 65);
+        color: #fff;
+        margin-left: 450px;
+        margin-top: -120px;
+        border-radius: 20px;
+        padding: 30px 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .card {
+        width: 90%;
+        max-width: 365px;
+        background: rgb(67, 65, 65);
+        color: #fff;
+        margin-left: 150px;
+        margin-top: 100px;
+        border-radius: 20px;
+        padding: 30px 30px;
+        text-align: center;
+    }
+
+    .plan
+    {
+        font-family: 'Poppins';
+        font-size: 20px;
+        width: 90%;
+        max-width: 100px;
+        background: rgb(67, 65, 65);
+        color: #fff;
+        margin-left: 600px;
+        margin-top: -120px;
+        border-radius: 20px;
+        padding: 30px 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        font-family: 'Montserrat', 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #fff;
+        background-color: white;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 375px;
+        background: rgb(67, 65, 65);
+        color: #fff;
+        margin-left: 300px;
+        margin-top: 100px;
+        border-radius: 20px;
+        padding: 30px 30px;
+        text-align: center;
+    }
+
+    .plan
+    {
+        font-family: 'Poppins';
+        font-size: 20px;
+        width: 90%;
+        max-width: 200px;
+        background: rgb(67, 65, 65);
+        color: #fff;
+        margin-left: 750px;
+        margin-top: -90px;
+        border-radius: 20px;
+        padding: 30px 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        font-family: 'Montserrat', 'Poppins', sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #fff;
+        background-color: white;
+    }
+
+    .plan
+    {
+        font-family: 'Poppins';
+        font-size: 20px;
+        width: 90%;
+        max-width: 200px;
+        background: rgb(67, 65, 65);
+        color: #fff;
+        margin-left: 930px;
+        margin-top: -90px;
+        border-radius: 20px;
+        padding: 30px 30px;
+        text-align: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 390px;
+        background: rgb(67, 65, 65);
+        color: #fff;
+        margin-left: 465px;
+        margin-top: 100px;
+        border-radius: 20px;
+        padding: 30px 30px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content = "width = device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style-doit.css">
+        <title>Do-It</title>
+    </head>
+
+    <body>
+    <!-- Navigation Bar -->
+        <header>
+            <nav>
+                <div class = "lNav">Do-It</div>
+                <div class="c">
+                    <div class = "h"><a href="index-doit.html">Home</a></div>
+                    <div class = "a"><a href="about-doit.html">About</a></div>
+                    <div class = 'cm'><a href="contact-main.html">Contact Me</a></div>
+                </div>
+            </nav>
+        </header>
+        <div class = "list">
+            <h2>To-Do List <img src = "images-doit/doit.jpg"></h2>
+            <div class = "box">
+                <input type="text" id = "ibox" placeholder="Add new task!">
+                <button onclick="addTask()" id="add-btn">Add</button>
+            </div>
+            <ul id = "nTask">
+                <!-- <li class = "check">New Task</li>
+                <li>New Task</li>
+                <li>New Task</li> -->
+            </ul>
+        </div>
+        <div class="plan"><a href="index-weathernow.html" target="_blank">Check Weather</a></div>
+        <script src="script-doit.js"></script>
+    </body>
+</html>
